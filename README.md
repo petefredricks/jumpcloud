@@ -1,7 +1,7 @@
 JumpCloud
 ========
 
-### Running documentation locally
+### Instructions for installing:
 1. Clone repo.
 2. Run 'npm install'.
 3. Make sure you have MongoDB running locally.
