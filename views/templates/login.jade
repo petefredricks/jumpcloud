@@ -1,0 +1,16 @@
+form#login-view.login-form
+
+	.content
+
+		h1 JumpCloud
+
+		.form-group
+			input.form-control(type="text", ng-model="login.email", placeholder="Email")
+
+		.form-group
+			input.form-control(type="password", ng-model="login.password", placeholder="Password")
+
+		.btn.btn-default(ng-click="logIn()") Log In
+
+	.login-footer
+		span.highlight-link(ng-click="showSignup()") Sign up

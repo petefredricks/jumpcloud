@@ -1,0 +1,14 @@
+doctype 5
+html
+	head
+		title= title
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		link(href='http://fonts.googleapis.com/css?family=Lobster+Two', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco', rel='stylesheet', type='text/css')
+		link(rel="shortcut icon", href="/images/favicon.ico?v=5")
+
+		- each path in paths.css
+			link(rel="stylesheet", href="#{path}", media="screen, projection")
+
+	body
+		block content

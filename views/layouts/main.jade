@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		title= title
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(rel="shortcut icon", href="/images/favicon.ico?v=1")
+		base(href="/app/")
+
+		- each path in paths.css
+			link(rel="stylesheet", href="#{path}", media="screen, projection")
+
+	body(ng-app="jumpcloud", ng-controller="AppCtrl", window-resize="true")
+
+		block content
+
+		page-loader(ng-show="showPageLoading")
+
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js")
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js")
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.js")
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-touch.js")
+
+		- each path in paths.js
+			script(type="text/javascript", src="#{path}")

@@ -1,0 +1,194 @@
+@import 'nib'
+@import '../mixins'
+
+body
+	background-color #0c1317
+	color #272727
+	overflow hidden
+
+#wrapper
+	absolute top right bottom left
+	background-image url(../images/background.jpg)
+	background-size cover
+	overflow auto
+
+.page-loading
+	fixed top right bottom left
+
+	.fa-spinner
+		absolute top 50% left 50%
+		color #eee
+		font-size 100px
+		margin -50px 0 0 -50px
+		z-index 100
+
+.filter
+	absolute top right bottom left
+	background-color rgba(12, 19, 23, 0.5)
+
+h1
+	font-size 36px
+
+h2
+	font-size 24px
+
+h3
+	font-size 18px
+
+h4
+	color #919191
+	font-size 14px
+
+.ng-cloak
+	display none
+
+.form-control
+	border 1px solid #c8c8c8
+	border-radius 0
+	font-family 'Clan-Book'
+	height auto
+	padding 14px
+
+.form-group
+	margin-bottom 22px
+
+.btn-default
+	background-color #272727
+	border none
+	border-radius 0
+	color #fff
+	height 50px
+	padding-top 15px
+
+	&:hover
+		background-color lighten(#272727,10%)
+		color #fff
+
+.highlight-link
+	color #1c7efb
+	cursor pointer
+
+	&:hover
+		color darken(#1c7efb, 30%)
+
+.custom-select
+	color #848484
+	display inline-block
+	font-size 14px
+	position relative
+
+	&:hover
+		color darken(#848484, 30%)
+
+	.custom-value
+		background #fff
+		border 1px solid #e7e7e9
+		border-radius 5px
+		cursor pointer
+		padding 5px 14px 5px
+		width 130px
+
+		span
+			font-family 'Clan-Book'
+
+		i
+			color #d1d1d1
+			float right
+			font-size 22px
+
+	select
+		absolute top right bottom left
+		background none
+		cursor pointer
+		opacity 0
+		width 100%
+
+.custom-checkbox
+	padding-top 5px
+
+	&.checkbox-inline
+		padding-left 21px
+
+	.check-box
+		border 1px solid #e7e7e9
+		border-radius 2px
+		float left
+		height 16px
+		margin-top 1px
+		margin-left -21px
+		position relative
+		width 16px
+
+	.fa-check
+		absolute top 2px left 2px
+		color #727272
+		font-size 11px
+
+	input
+		height 16px
+		margin-top 3px
+		opacity 0
+		width 16px
+
+	label
+		color #848484
+		font-family 'Clan-Book'
+		font-weight normal
+
+.checkbox-inline+.checkbox-inline
+	margin-left 16px
+
+.login-form
+	background #e8e8e8
+	margin 164px auto 0
+	position relative
+	width 380px
+
+	h1
+		margin 0
+		padding-bottom 32px
+		padding-top 50px
+
+	h1, h3, h4
+		text-align center
+
+	h3
+		margin 35px 0 15px
+
+	h4
+		margin 0 0 40px
+
+	.content
+		padding 0 35px 35px
+
+	.btn-default
+		margin 10px 0 0
+		width 100%
+
+	.login-header
+		background-color #1c7efb
+		color #fff
+		font-size 16px
+		height 70px
+		padding-top 24px
+		position relative
+		text-align center
+
+		.fa-times
+			absolute top 10px right 10px
+			cursor pointer
+
+			&:hover
+				color #ccc
+
+	.login-footer
+		background-color #fff
+		font-size 16px
+		height 70px
+		padding 24px 0 0
+		text-align center
+
+#signup-view
+	.content
+		padding-top 58px
+		padding-bottom 26px

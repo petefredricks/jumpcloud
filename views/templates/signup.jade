@@ -1,0 +1,17 @@
+form#signup-view.login-form
+
+	.login-header Create a new account
+		i.fa.fa-times(ng-click="showIndex()")
+
+	.content
+
+		.form-group
+			input.form-control(type="text", ng-model="signup.name", placeholder="Name")
+
+		.form-group
+			input.form-control(type="text", ng-model="signup.email", placeholder="Email")
+
+		.form-group
+			input.form-control(type="password", ng-model="signup.password", placeholder="Password")
+
+		.btn.btn-default Sign Up

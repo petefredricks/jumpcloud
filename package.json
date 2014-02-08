@@ -1,0 +1,32 @@
+{
+	"name":            "JumpCloud",
+	"description":     "Test application for JumpCloud",
+	"version":         "0.0.1",
+	"contributors":    [
+		"Pete Fredricks <pete@goosetail.com>"
+	],
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository":      {
+		"type": "git",
+		"url":  "git@github.com:goosetail/jumpcloud.git"
+	},
+	"dependencies":    {
+		"async":                "0.2.x",
+		"underscore":           "1.5.x",
+		"express":              "3.4.x",
+		"jade":                 "1.1.x",
+		"stylus":               "0.42.x",
+		"nib":                  "1.0.x",
+		"nconf":                "0.6.x",
+		"mongoose":             "3.8.x",
+		"grunt":                "0.4.x",
+		"grunt-contrib-uglify": "0.3.x",
+		"grunt-cssjoin":        "0.2.x",
+		"grunt-contrib-copy":   "0.5.x"
+	},
+	"engines":         {
+		"node": ">=0.10.24"
+	}
+}

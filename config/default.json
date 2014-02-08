@@ -1,0 +1,17 @@
+{
+	"server": {
+		"host": "localhost",
+		"port": 3000,
+		"secure": false,
+		"setWorkers": 1
+	},
+	"app": {
+		"optimized": false,
+		"resourceRoot": "",
+		"cookieSecret": "mi galleta secreto",
+		"sessionSecret": "mi secreto de sesión"
+	},
+	"database":  {
+		"url": "mongodb://localhost/jumpcloudSample"
+	}
+}

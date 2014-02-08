@@ -1,0 +1,6 @@
+{
+	"ignore": [
+		"public/js/app/",
+		"public/js/lib/"
+	]
+}
