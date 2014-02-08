@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 			app: {
 				files: {
 					'public/<%= pkg.version %>/js/app.js': [
-						'public/js/lib/ui-bootstrap-tpls-0.9.0.min.js',
+						'public/js/lib/underscore-min.js',
 						'public/js/app/controllers.js',
 						'public/js/app/services.js',
 						'public/js/app/directives.js',

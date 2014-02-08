@@ -13,7 +13,7 @@ var app = module.exports = express();
 var stylus = require( 'stylus' );
 var nib = require( 'nib' );
 
-// setup
+// database setup
 require( 'mongoose' ).connect( nconf.get( 'database:url' ) );
 require( './models' ).init();
 
@@ -26,7 +26,7 @@ app.use( express.methodOverride() );
 app.use( express.cookieParser( nconf.get( 'app:cookieSecret' ) ) );
 app.use( express.session({
 	secret: nconf.get( 'app:sessionSecret' ),
-	store: app.sessionStore
+	store: app.sessionStore // <--- normally use Redis for sessions
 }));
 
 // development only

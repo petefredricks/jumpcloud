@@ -11,7 +11,6 @@ var User = new mongoose.Schema({
 
 	name: 			{ type: String },
 	created: 		{ type: Date },
-	lastLogin:	{ type: Date },
 	email: {
 		type: String,
 		lowercase: true,

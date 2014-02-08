@@ -1,4 +1,4 @@
-angular.module( 'jumpcloud', [ 'controllers', 'directives', 'services', 'filters', 'ui.bootstrap', 'ngRoute', 'ngTouch' ])
+angular.module( 'jumpcloud', [ 'controllers', 'directives', 'services', 'filters', 'ngRoute', 'ngTouch' ])
 
 	.config([ '$locationProvider', '$routeProvider', function( $locationProvider, $routeProvider ) {
 
@@ -7,5 +7,5 @@ angular.module( 'jumpcloud', [ 'controllers', 'directives', 'services', 'filters
 		$routeProvider
 			.when('/', { templateUrl: 'templates/dashboard.html', controller: 'DashboardCtrl' })
 			.when('/login', { templateUrl: 'templates/login.html', controller: 'LoginCtrl' })
-			.when('/signup', { templateUrl: 'templates/signup.html', controller: 'LoginCtrl' })
+			.when('/signup', { templateUrl: 'templates/signup.html', controller: 'SignupCtrl' })
 	}]);

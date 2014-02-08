@@ -25,6 +25,18 @@ angular.module( 'directives', [] )
 		}
 	}])
 
+	.directive( 'autofill', function () {
+		return {
+			restrict: 'C',
+			require: "ngModel",
+			link: function (scope, element, attrs, ngModel) {
+				scope.$on( 'autofill:update', function() {
+					ngModel.$setViewValue( element.val() );
+				});
+			}
+		}
+	})
+
 	.directive( 'pageLoader', [ function() {
 		return {
 			restrict: 'E',

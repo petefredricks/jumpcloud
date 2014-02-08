@@ -1,17 +1,22 @@
 form#signup-view.login-form
 
 	.login-header Create a new account
-		i.fa.fa-times(ng-click="showIndex()")
+		i.fa.fa-times(ng-click="showLogin()")
 
 	.content
 
-		.form-group
+		.alert.alert-danger.ng-cloak(ng-show="showError") There was an error processing your request. Please try again later.
+
+		.form-group(ng-class="checkError('name')")
 			input.form-control(type="text", ng-model="signup.name", placeholder="Name")
+			.error-msg Your name is required for sign up.
 
-		.form-group
+		.form-group(ng-class="checkError('email')")
 			input.form-control(type="text", ng-model="signup.email", placeholder="Email")
+			.error-msg A valid email is required for sign up.
 
-		.form-group
+		.form-group(ng-class="checkError('password')")
 			input.form-control(type="password", ng-model="signup.password", placeholder="Password")
+			.error-msg Passwords must be at least 5 characters.
 
-		.btn.btn-default Sign Up
+		button.btn.btn-default(ng-click="submit($event)") Sign Up

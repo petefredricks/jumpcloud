@@ -1,1 +1,10 @@
 #dashboard-view
+	.container
+		.jumbotron
+			.logout(ng-click="logout()") Log Out
+			h1 User Stats
+			p Name:
+				b  {{stats.name}}
+			p Created:
+				b  {{stats.created | date:'EEEE, MMM d, yyyy - h:mm a'}}
+				small  ({{stats.created | timeAgo}})

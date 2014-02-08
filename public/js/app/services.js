@@ -24,13 +24,16 @@ angular.module( 'services', [] )
 
 		return {
 
-			login: function( callback ) {
-
+			login: function( data, callback ) {
+				Util.promiseHandler( $http.post( '/api/login', data ), callback );
 			},
 
+			signup: function( data, callback ) {
+				Util.promiseHandler( $http.post( '/api/signup', data ), callback );
+			},
 
-			signup: function( callback ) {
-
+			getStats: function( callback ) {
+				Util.promiseHandler( $http.get( '/api/stats' ), callback );
 			}
 
 		};

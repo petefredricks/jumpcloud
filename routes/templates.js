@@ -18,5 +18,5 @@ function templateAction( req, res ) {
 	});
 }
 
-app.get( '/app/templates/:name', templateAction );
+app.get( '/templates/:name', templateAction );
 
